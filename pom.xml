@@ -7,6 +7,10 @@
     <groupId>org.example</groupId>
     <artifactId>untitled1</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <modules>
+        <module>day3</module>
+    </modules>
     <dependencies>
         <dependency>
             <groupId>org.springframework</groupId>

@@ -4,24 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="549eef79-2407-45f5-9246-fcee6daa5847" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/bean/Card.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/bean/Grades.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/Day2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/BathRoomManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/GradesService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/LibraryManager.java" afterDir="false" />
+    <list default="true" id="549eef79-2407-45f5-9246-fcee6daa5847" name="更改" comment="完成day2任务，通过运行day2Desk方法查看">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day3/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day3/src/main/java/Utils/SpringUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day3/src/main/java/bean/Team.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day3/src/main/java/config/DataSourceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day3/src/main/java/dao/TeamDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day3/src/main/java/service/TeamService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day3/src/main/resources/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Utils/SpringUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Utils/SpringUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/bean/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/bean/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/bean/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/bean/Teacher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/config/ApplicationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/config/ApplicationConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dao/StudentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/StudentDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/StudentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/TeacherService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/TeacherService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring-beans.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/TeacherTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/TeacherTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-beans.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,15 +63,25 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "onboarding.tips.debug.path": "D:/JDBC_Project/untitled1/src/main/java/org/example/Main.java",
+    "onboarding.tips.debug.path": "D:/JDBC_Project/untitled1/day3/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "MavenSettings",
     "应用程序.TeacherTest.executor": "Run",
-    "应用程序.Test.executor": "Run"
+    "应用程序.Test.executor": "Run",
+    "应用程序.test.executor": "Run"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\JDBC_Project\untitled1\day3\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="应用程序.test">
     <configuration name="TeacherTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.TeacherTest" />
       <module name="untitled1" />
@@ -89,8 +95,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test" />
+      <module name="day3" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.test" />
         <item itemvalue="应用程序.TeacherTest" />
       </list>
     </recent_temporary>
@@ -104,6 +118,35 @@
       <option name="presentableId" value="Default" />
       <updated>1764593370157</updated>
     </task>
+    <task id="LOCAL-00001" summary="完成day2任务，通过运行day2Desk方法查看">
+      <option name="closed" value="true" />
+      <created>1766579365719</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1766579365719</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="完成day2任务，通过运行day2Desk方法查看" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成day2任务，通过运行day2Desk方法查看" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/day3/src/Main.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/day3/src/main/java/org/example/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
