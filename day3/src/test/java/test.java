@@ -1,7 +1,6 @@
-import Utils.SpringUtil;
-import bean.Team;
-import com.alibaba.druid.util.StringUtils;
-import service.TeamService;
+import org.example.utils.SpringUtil;
+import org.example.bean.Team;
+import org.example.service.TeamService;
 
 public class test {
     public static void main(String[] args) {

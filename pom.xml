@@ -10,6 +10,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>day3</module>
+        <module>day2</module>
+        <module>day1</module>
     </modules>
     <dependencies>
         <dependency>

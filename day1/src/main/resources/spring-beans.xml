@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/util
+        https://www.springframework.org/schema/util/spring-util.xsd">
+
+
+    <context:component-scan base-package="org.example"/>
+    <bean id="teacher3" class="org.example.bean.Teachers">
+        <property name="name" value="张三"/>
+    <property name="addr" value="南京"/>
+
+    </bean>
+    <bean id="random" class="java.util.Random" scope="prototype"/>
+    <util:list id="studentList">
+        <bean class="org.example.bean.Student">
+            <property name="name" value="张三"/>
+            <property name="gender" value="男"/>
+        </bean>
+        <bean class="org.example.bean.Student">
+            <property name="name" value="李四"/>
+            <property name="gender" value="女"/>
+        </bean>
+        <bean class="org.example.bean.Student">
+            <property name="name" value="王五"/>
+            <property name="gender" value="男"/>
+        </bean>
+        <bean class="org.example.bean.Student">
+            <property name="name" value="赵六"/>
+            <property name="gender" value="女"/>
+        </bean>
+    </util:list>
+
+</beans>

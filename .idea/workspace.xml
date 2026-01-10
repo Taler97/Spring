@@ -5,19 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="549eef79-2407-45f5-9246-fcee6daa5847" name="更改" comment="完成day2任务，通过运行day2Desk方法查看">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day3/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day3/src/main/java/Utils/SpringUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day3/src/main/java/bean/Team.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day3/src/main/java/config/DataSourceConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day3/src/main/java/dao/TeamDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day3/src/main/java/service/TeamService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day3/src/main/resources/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day1/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day2/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day3/src/main/java/Utils/SpringUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/day3/src/main/java/org/example/utils/SpringUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day3/src/main/java/bean/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/day3/src/main/java/org/example/bean/Team.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day3/src/main/java/config/DataSourceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/day3/src/main/java/org/example/config/DataSourceConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day3/src/main/java/dao/TeamDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/day3/src/main/java/org/example/dao/TeamDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day3/src/main/java/service/TeamService.java" beforeDir="false" afterPath="$PROJECT_DIR$/day3/src/main/java/org/example/service/TeamService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day3/src/test/java/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/day3/src/test/java/test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-beans.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Utils/SpringUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/bean/Card.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/bean/Grades.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/bean/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/bean/Teacher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/config/ApplicationConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/Day2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dao/StudentDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/BathRoomManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/GradesService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/LibraryManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/StudentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/TeacherService.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,26 +76,43 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Maven.untitled1 [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor": "Run",
+    "Maven.untitled1 [org.apache.maven.plugins:maven-clean-plugin:3.2.0:help].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "onboarding.tips.debug.path": "D:/JDBC_Project/untitled1/day3/src/main/java/org/example/Main.java",
+    "last_opened_file_path": "D:/JDBC_Project/untitled1/day1/src/main/resources",
+    "onboarding.tips.debug.path": "D:/JDBC_Project/untitled1/day1/src/main/java/org/example/Main.java",
     "project.structure.last.edited": "模块",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "MavenSettings",
+    "应用程序.Main.executor": "Run",
     "应用程序.TeacherTest.executor": "Run",
     "应用程序.Test.executor": "Run",
     "应用程序.test.executor": "Run"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JDBC_Project\untitled1\day1\src\main\resources" />
+      <recent name="D:\JDBC_Project\untitled1\day1\src\main\java\org\example" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\JDBC_Project\untitled1\day22\src\main\resources" />
+      <recent name="D:\JDBC_Project\untitled1\day22\src\main\java\org\example" />
+      <recent name="D:\JDBC_Project\untitled1\src\main\java\org\example" />
+      <recent name="D:\JDBC_Project\untitled1\day2\src\main\java\org\example" />
       <recent name="D:\JDBC_Project\untitled1\day3\src\main\resources" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example.service" />
+      <recent name="org.example.utils" />
+      <recent name="org.example.bean" />
+    </key>
   </component>
-  <component name="RunManager" selected="应用程序.test">
+  <component name="RunManager">
     <configuration name="TeacherTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.TeacherTest" />
       <module name="untitled1" />
@@ -129,6 +160,29 @@
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="完成day2任务，通过运行day2Desk方法查看" />
     <option name="LAST_COMMIT_MESSAGE" value="完成day2任务，通过运行day2Desk方法查看" />
@@ -145,6 +199,11 @@
           <url>file://$PROJECT_DIR$/day3/src/main/java/org/example/Main.java</url>
           <line>13</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/example/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
