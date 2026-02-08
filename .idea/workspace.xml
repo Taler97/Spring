@@ -4,19 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="549eef79-2407-45f5-9246-fcee6daa5847" name="更改" comment="前三天任务分模块化，在各模块main里检验">
-      <change afterPath="$PROJECT_DIR$/day4/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day4/src/main/java/org/example/config/AppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day4/src/main/java/org/example/converter/DoubleToBigDecimalConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day4/src/main/java/org/example/service/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day4/src/main/java/org/example/service/imp/SunWuKongImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day4/src/main/java/org/example/service/proxy/GaoCuiLanStaticProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day4/src/main/java/org/example/service/rolesInter/GaoCuiLan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day4/src/main/java/org/example/service/rolesInter/SunWuKong.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="549eef79-2407-45f5-9246-fcee6daa5847" name="更改" comment="第四天,">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day3/src/main/java/org/example/utils/SpringUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/day3/src/main/java/org/example/utils/SpringUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day4/src/main/java/org/example/converter/DoubleToBigDecimalConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/day4/src/main/java/org/example/converter/DoubleToBigDecimalConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day4/src/test/java/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/day4/src/test/java/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,6 +82,9 @@
       <recent name="D:\JDBC_Project\untitled1\day22\src\main\java\org\example" />
       <recent name="D:\JDBC_Project\untitled1\src\main\java\org\example" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.example.service" />
       <recent name="org.example.utils" />
@@ -150,7 +144,15 @@
       <option name="project" value="LOCAL" />
       <updated>1768031031259</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="第四天,">
+      <option name="closed" value="true" />
+      <created>1769506338219</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1769506338219</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -179,7 +181,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="完成day2任务，通过运行day2Desk方法查看" />
     <MESSAGE value="前三天任务分模块化，在各模块main里检验" />
-    <option name="LAST_COMMIT_MESSAGE" value="前三天任务分模块化，在各模块main里检验" />
+    <MESSAGE value="第四天," />
+    <option name="LAST_COMMIT_MESSAGE" value="第四天," />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

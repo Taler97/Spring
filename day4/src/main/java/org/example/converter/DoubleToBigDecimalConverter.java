@@ -5,10 +5,12 @@ import java.math.BigDecimal;
 public class DoubleToBigDecimalConverter implements Converter<Double, BigDecimal> {
 
     @Override
-    public BigDecimal convert(Double source) {
+    public  BigDecimal convert(Double source) {
         if (source == null) {
             return null;
         }
+        System.out.println("已转换"+source);
+
         return new BigDecimal(source.toString());
     }
 }

@@ -1,8 +1,11 @@
 import org.example.config.AppConfig;
+import org.example.converter.DoubleToBigDecimalConverter;
 import org.example.service.Role;
 import org.example.service.rolesInter.GaoCuiLan;
 import org.example.service.rolesInter.SunWuKong;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import java.util.Scanner;
 
 public class Test {
     public static void main(String[] args) {
@@ -31,5 +34,11 @@ public class Test {
         });
         proxy.catchPig();
         context.close();
+        DoubleToBigDecimalConverter doubleToBigDecimalConverter=new DoubleToBigDecimalConverter();
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("请输入一个浮点数");
+
+        double num= scanner.nextDouble();
+        doubleToBigDecimalConverter.convert(num);
     }
 }
