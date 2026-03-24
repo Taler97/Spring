@@ -24,7 +24,48 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="82135f7a-7286-433b-9a7a-02b0e99c4e74">
-      <console name="Connection" type="STANDARD" schema="mysql" session="Main" />
+      <console name="Connection" type="STANDARD" schema="game_db" session="Main"><![CDATA[-- =============================================
+-- 1. 创建数据库（如果不存在）
+-- =============================================
+CREATE DATABASE IF NOT EXISTS game_db 
+CHARACTER SET utf8mb4 
+COLLATE utf8mb4_unicode_ci;
+
+USE game_db;
+
+-- =============================================
+-- 2. 创建帐户表
+-- =============================================
+DROP TABLE IF EXISTS `account`;
+CREATE TABLE `account` (
+    `id` INT NOT NULL AUTO_INCREMENT COMMENT '主键ID',
+    `account` VARCHAR(255) NOT NULL COMMENT '帐号',
+    `password` VARCHAR(255) NOT NULL COMMENT '密码',
+    `coupon` INT NOT NULL DEFAULT 0 COMMENT '游戏点券',
+    PRIMARY KEY (`id`),
+    UNIQUE KEY `uk_account` (`account`) COMMENT '帐号唯一索引'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='帐户表';
+
+-- =============================================
+-- 3. 创建充值及消费记录表
+-- =============================================
+DROP TABLE IF EXISTS `transaction_record`;
+CREATE TABLE `transaction_record` (
+    `id` INT NOT NULL AUTO_INCREMENT COMMENT '主键ID',
+    `account` VARCHAR(255) NOT NULL COMMENT '帐号',
+    `update_time` DATETIME NOT NULL COMMENT '发生时间',
+    `category` VARCHAR(10) NOT NULL COMMENT '类型：充值|消费',
+    `num` INT NOT NULL COMMENT '数量',
+    PRIMARY KEY (`id`),
+    KEY `idx_account` (`account`) COMMENT '帐号索引',
+    KEY `idx_update_time` (`update_time`) COMMENT '时间索引'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='充值及消费记录表';]]></console>
+      <console name="Connection 1" type="STANDARD" schema="game_db" session="Main"><![CDATA[-- 先切换到正确的数据库
+USE game_db;
+
+-- 或者直接指定数据库名
+DROP TABLE IF EXISTS game_db.account;
+DROP TABLE IF EXISTS game_db.transaction_record;]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
@@ -37,11 +78,25 @@
     <connection id="82135f7a-7286-433b-9a7a-02b0e99c4e74" />
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-actions connection-id="82135f7a-7286-433b-9a7a-02b0e99c4e74" dataset="game_db.account" active-filter-id="EMPTY_FILTER">
+      <filter id="13d697f2-4c72-4f39-a6ea-4d50953d5572" name="Filter" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="id" operator="=" value="" active="true" />
+      </filter>
+    </filter-actions>
+    <filter-actions connection-id="82135f7a-7286-433b-9a7a-02b0e99c4e74" dataset="game_db.transaction_record" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="82135f7a-7286-433b-9a7a-02b0e99c4e74" dataset="spring.team" active-filter-id="EMPTY_FILTER" />
+  </component>
+  <component name="DBNavigator.Project.ExecutionManager">
+    <retain-sticky-names value="false" />
   </component>
   <component name="DBNavigator.Project.ObjectQuickFilterManager">
     <last-used-operator value="EQUAL" />
     <filters />
+  </component>
+  <component name="DBNavigator.Project.ScriptExecutionManager" clear-outputs="true">
+    <recently-used-interfaces>
+      <mapping database-type="MYSQL" interface-id="DEFAULT" />
+    </recently-used-interfaces>
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
@@ -574,5 +629,9 @@
         </visibility-settings>
       </environment>
     </general-settings>
+  </component>
+  <component name="DBNavigator.Project.StatementExecutionManager">
+    <execution-variables />
+    <execution-variable-types />
   </component>
 </project>

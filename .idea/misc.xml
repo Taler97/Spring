@@ -6,6 +6,11 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/day2/pom.xml" />
+        <option value="$PROJECT_DIR$/day4/pom.xml" />
+        <option value="$PROJECT_DIR$/day5/pom.xml" />
+        <option value="$PROJECT_DIR$/day3/pom.xml" />
+        <option value="$PROJECT_DIR$/day1/pom.xml" />
+        <option value="$PROJECT_DIR$/day0/pom.xml" />
       </list>
     </option>
   </component>

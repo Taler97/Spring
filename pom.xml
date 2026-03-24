@@ -14,7 +14,7 @@
         <module>day1</module>
         <module>day4</module>
         <module>day5</module>
-        <module>day0</module>
+        <module>day6</module>
     </modules>
     <dependencies>
         <dependency>
