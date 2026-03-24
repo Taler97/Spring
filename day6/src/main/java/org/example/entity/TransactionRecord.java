@@ -10,9 +10,9 @@ import java.util.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 public class TransactionRecord {
-    private Integer id;           // 主键ID
-    private String account;       // 帐号
-    private Date updateTime;      // 发生时间
-    private String category;      // 类型：充值|消费
-    private Integer num;          // 数量
+    private Integer id;
+    private String account;
+    private Date updateTime;
+    private String category;
+    private Integer num;
 }

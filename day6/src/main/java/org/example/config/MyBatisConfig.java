@@ -38,52 +38,11 @@ public class MyBatisConfig {
         dataSource.setMaxActive(10);
         dataSource.setMaxWait(60000);
 
-        // ========== 关键：连接保活配置 ==========
-        // 检测连接是否有效的SQL
-        dataSource.setValidationQuery("SELECT 1");
-
-        // 空闲时检测连接有效性
-        dataSource.setTestWhileIdle(true);
-
-        // 获取连接时检测连接有效性
-        dataSource.setTestOnBorrow(true);
-
-        // 归还连接时检测连接有效性
-        dataSource.setTestOnReturn(false);
-
-        // 配置间隔多久才进行一次检测（毫秒）
-        dataSource.setTimeBetweenEvictionRunsMillis(30000);  // 30秒检测一次
-
-        // 配置一个连接在池中最小生存的时间（毫秒）
-        dataSource.setMinEvictableIdleTimeMillis(300000);    // 5分钟
-
-        // 配置一个连接在池中最大生存的时间（毫秒）
-        dataSource.setMaxEvictableIdleTimeMillis(600000);    // 10分钟
-
-        // 连接泄漏检测
-        dataSource.setRemoveAbandoned(true);
-        dataSource.setRemoveAbandonedTimeout(180);           // 3分钟
-        dataSource.setLogAbandoned(true);
-
-        // ========== 连接重试配置 ==========
-        // 连接错误重试次数
-        dataSource.setConnectionErrorRetryAttempts(3);
-
-        // 获取连接失败后是否中断
-        dataSource.setBreakAfterAcquireFailure(false);
-
-        // ========== 其他配置 ==========
-        dataSource.setPoolPreparedStatements(true);
-        dataSource.setMaxPoolPreparedStatementPerConnectionSize(20);
-
-        // 配置监控统计拦截的filters
         try {
             dataSource.setFilters("stat,wall");
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
-        // 设置连接属性
         Properties properties = new Properties();
         properties.setProperty("useSSL", "false");
         properties.setProperty("characterEncoding", "utf8");

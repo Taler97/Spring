@@ -38,12 +38,12 @@ public class InitDataBases {
     private void dropTables() {
         System.out.println("1. 删除现有表...");
 
-        // 删除交易记录表 - 使用独立操作
+        // 删除交易记录表
         try {
             jdbcTemplate.execute("DROP TABLE IF EXISTS transaction_record");
             System.out.println("   ✓ transaction_record 表已删除");
         } catch (Exception e) {
-            System.out.println("   ⚠ 删除 transaction_record 表失败: " + e.getMessage());
+            System.out.println("   删除 transaction_record 表失败: " + e.getMessage());
         }
 
         // 立即刷新连接，避免连接超时
@@ -52,9 +52,9 @@ public class InitDataBases {
         // 删除账户表 - 使用独立操作
         try {
             jdbcTemplate.execute("DROP TABLE IF EXISTS account");
-            System.out.println("   ✓ account 表已删除");
+            System.out.println("    account 表已删除");
         } catch (Exception e) {
-            System.out.println("   ⚠ 删除 account 表失败: " + e.getMessage());
+            System.out.println("   删除 account 表失败: " + e.getMessage());
         }
 
         // 再次刷新连接
@@ -82,7 +82,7 @@ public class InitDataBases {
             jdbcTemplate.execute(createAccountTable);
             System.out.println("   ✓ account 表创建成功");
         } catch (Exception e) {
-            System.out.println("   ✗ account 表创建失败: " + e.getMessage());
+            System.out.println("    account 表创建失败: " + e.getMessage());
             throw e;
         }
 
@@ -118,7 +118,7 @@ public class InitDataBases {
         try {
             jdbcTemplate.execute("SELECT 1");
         } catch (Exception e) {
-            System.out.println("   ⚠ 刷新连接失败: " + e.getMessage());
+            System.out.println("    刷新连接失败: " + e.getMessage());
         }
     }
 }

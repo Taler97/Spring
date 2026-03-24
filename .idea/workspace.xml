@@ -5,21 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="549eef79-2407-45f5-9246-fcee6daa5847" name="更改" comment="day6,未实现初始化数据库">
-      <change afterPath="$PROJECT_DIR$/day0/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day6/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day6/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day6/src/main/java/org/example/config/MyBatisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day6/src/main/java/org/example/entity/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day6/src/main/java/org/example/entity/TransactionRecord.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day6/src/main/java/org/example/mapper/AccountMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day6/src/main/java/org/example/mapper/TransactionRecordMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day6/src/main/java/org/example/service/AccountService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day6/src/main/java/org/example/service/InitDataBases.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,7 +176,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773122338433</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="day6,未实现初始化数据库">
+      <option name="closed" value="true" />
+      <created>1774346358548</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1774346358548</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
