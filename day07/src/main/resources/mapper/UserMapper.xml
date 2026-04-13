@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.example.mapper.UserMapper">
+
+    <!-- 结果映射：将数据库字段映射到实体类属性 -->
+    <resultMap id="BaseResultMap" type="org.example.entity.User">
+        <result column="name" property="name" jdbcType="VARCHAR"/>
+        <result column="age" property="age" jdbcType="INTEGER"/>
+        <result column="money" property="money" jdbcType="DOUBLE"/>
+    </resultMap>
+
+    <!-- 多条件查询 -->
+    <select id="selectByCondition" resultMap="BaseResultMap">
+        SELECT name, age, money
+        FROM user
+        <where>
+            <!-- 姓名：模糊查询，非空且不为空字符串 -->
+            <if test="name != null and name != ''">
+                AND name LIKE CONCAT('%', #{name}, '%')
+            </if>
+
+            <!-- 年龄：精确查询 -->
+            <if test="age != null">
+                AND age = #{age}
+            </if>
+
+            <!-- 最小金额 -->
+            <if test="minMoney != null">
+                AND money >= #{minMoney}
+            </if>
+
+            <!-- 最大金额 -->
+            <if test="maxMoney != null">
+                AND money &lt;= #{maxMoney}
+            </if>
+        </where>
+        ORDER BY age ASC
+    </select>
+
+
+    <!-- 查询所有 -->
+    <select id="selectAll" resultMap="BaseResultMap">
+        SELECT id, name, age, money FROM user
+        ORDER BY id DESC
+    </select>
+
+    <!-- 新增 -->
+    <insert id="insert" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO user(name, age, money)
+        VALUES(#{name}, #{age}, #{money})
+    </insert>
+
+
+    <!-- 修改 -->
+    <update id="update">
+        UPDATE user
+        SET name = #{name},
+        age = #{age},
+        money = #{money}
+        WHERE id = #{id}
+    </update>
+
+    <!-- 删除 -->
+    <delete id="deleteById">
+        DELETE FROM user WHERE id = #{id}
+    </delete>
+
+    </mapper>

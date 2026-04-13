@@ -16,7 +16,8 @@ public class Main {
     public static void main(String[] args) throws SQLException {
         ApplicationContext context = new AnnotationConfigApplicationContext(MyBatisConfig.class);
         AccountService accountService = context.getBean(AccountService.class);
-
+        InitDataBases initDataBases=context.getBean(InitDataBases.class);
+        initDataBases.initDatabase();
         Account user1 = new Account();
         user1.setAccount("zhangsan");
         user1.setPassword("123456");

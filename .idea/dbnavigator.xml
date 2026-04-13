@@ -24,42 +24,38 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="82135f7a-7286-433b-9a7a-02b0e99c4e74">
-      <console name="Connection" type="STANDARD" schema="game_db" session="Main"><![CDATA[-- =============================================
--- 1. 创建数据库（如果不存在）
--- =============================================
-CREATE DATABASE IF NOT EXISTS game_db 
-CHARACTER SET utf8mb4 
-COLLATE utf8mb4_unicode_ci;
+      <console name="Connection" type="STANDARD" schema="game_db" session="Main"><![CDATA[-- ==========================================
+-- 数据库初始化脚本
+-- 功能：删除旧库、创建新库、创建表、插入测试数据
+-- ==========================================
 
-USE game_db;
+-- 1. 删除已存在的数据库（如果存在）
+DROP DATABASE IF EXISTS springmvcTest;
 
--- =============================================
--- 2. 创建帐户表
--- =============================================
-DROP TABLE IF EXISTS `account`;
-CREATE TABLE `account` (
-    `id` INT NOT NULL AUTO_INCREMENT COMMENT '主键ID',
-    `account` VARCHAR(255) NOT NULL COMMENT '帐号',
-    `password` VARCHAR(255) NOT NULL COMMENT '密码',
-    `coupon` INT NOT NULL DEFAULT 0 COMMENT '游戏点券',
-    PRIMARY KEY (`id`),
-    UNIQUE KEY `uk_account` (`account`) COMMENT '帐号唯一索引'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='帐户表';
+-- 2. 创建新数据库
+CREATE DATABASE springmvcTest;
 
--- =============================================
--- 3. 创建充值及消费记录表
--- =============================================
-DROP TABLE IF EXISTS `transaction_record`;
-CREATE TABLE `transaction_record` (
-    `id` INT NOT NULL AUTO_INCREMENT COMMENT '主键ID',
-    `account` VARCHAR(255) NOT NULL COMMENT '帐号',
-    `update_time` DATETIME NOT NULL COMMENT '发生时间',
-    `category` VARCHAR(10) NOT NULL COMMENT '类型：充值|消费',
-    `num` INT NOT NULL COMMENT '数量',
-    PRIMARY KEY (`id`),
-    KEY `idx_account` (`account`) COMMENT '帐号索引',
-    KEY `idx_update_time` (`update_time`) COMMENT '时间索引'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='充值及消费记录表';]]></console>
+-- 3. 使用该数据库
+USE springmvcTest;
+
+-- 4. 创建 user 表
+CREATE TABLE user (
+    id INT PRIMARY KEY AUTO_INCREMENT COMMENT '主键ID',
+    name VARCHAR(50) NOT NULL COMMENT '姓名',
+    age INT NOT NULL COMMENT '年龄',
+    money DOUBLE NOT NULL DEFAULT 0 COMMENT '金额',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间'
+);
+
+-- 5. 插入测试数据
+INSERT INTO user (name, age, money) VALUES ('张三', 25, 5000.00);
+INSERT INTO user (name, age, money) VALUES ('李四', 30, 8000.50);
+INSERT INTO user (name, age, money) VALUES ('王五', 28, 6500.00);
+INSERT INTO user (name, age, money) VALUES ('赵六', 35, 12000.00);
+
+-- 6. 验证：查询所有数据
+SELECT * FROM user;]]></console>
       <console name="Connection 1" type="STANDARD" schema="game_db" session="Main"><![CDATA[-- 先切换到正确的数据库
 USE game_db;
 

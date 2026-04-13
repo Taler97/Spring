@@ -46,10 +46,9 @@ public class InitDataBases {
             System.out.println("   删除 transaction_record 表失败: " + e.getMessage());
         }
 
-        // 立即刷新连接，避免连接超时
         refreshConnection();
 
-        // 删除账户表 - 使用独立操作
+        // 删除账户表 
         try {
             jdbcTemplate.execute("DROP TABLE IF EXISTS account");
             System.out.println("    account 表已删除");
