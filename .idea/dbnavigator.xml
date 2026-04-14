@@ -24,21 +24,7 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="82135f7a-7286-433b-9a7a-02b0e99c4e74">
-      <console name="Connection" type="STANDARD" schema="game_db" session="Main"><![CDATA[-- ==========================================
--- 数据库初始化脚本
--- 功能：删除旧库、创建新库、创建表、插入测试数据
--- ==========================================
-
--- 1. 删除已存在的数据库（如果存在）
-DROP DATABASE IF EXISTS springmvcTest;
-
--- 2. 创建新数据库
-CREATE DATABASE springmvcTest;
-
--- 3. 使用该数据库
-USE springmvcTest;
-
--- 4. 创建 user 表
+      <console name="Connection" type="STANDARD" schema="springmvctest" session="Main"><![CDATA[-- 创建 user 表
 CREATE TABLE user (
     id INT PRIMARY KEY AUTO_INCREMENT COMMENT '主键ID',
     name VARCHAR(50) NOT NULL COMMENT '姓名',
@@ -46,15 +32,15 @@ CREATE TABLE user (
     money DOUBLE NOT NULL DEFAULT 0 COMMENT '金额',
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间'
-);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- 5. 插入测试数据
+-- 插入测试数据
 INSERT INTO user (name, age, money) VALUES ('张三', 25, 5000.00);
 INSERT INTO user (name, age, money) VALUES ('李四', 30, 8000.50);
 INSERT INTO user (name, age, money) VALUES ('王五', 28, 6500.00);
 INSERT INTO user (name, age, money) VALUES ('赵六', 35, 12000.00);
 
--- 6. 验证：查询所有数据
+-- 验证：查询所有数据
 SELECT * FROM user;]]></console>
       <console name="Connection 1" type="STANDARD" schema="game_db" session="Main"><![CDATA[-- 先切换到正确的数据库
 USE game_db;
@@ -80,6 +66,7 @@ DROP TABLE IF EXISTS game_db.transaction_record;]]></console>
       </filter>
     </filter-actions>
     <filter-actions connection-id="82135f7a-7286-433b-9a7a-02b0e99c4e74" dataset="game_db.transaction_record" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="82135f7a-7286-433b-9a7a-02b0e99c4e74" dataset="springmvctest.user" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="82135f7a-7286-433b-9a7a-02b0e99c4e74" dataset="spring.team" active-filter-id="EMPTY_FILTER" />
   </component>
   <component name="DBNavigator.Project.ExecutionManager">

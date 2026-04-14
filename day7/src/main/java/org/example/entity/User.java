@@ -5,13 +5,10 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 public class User {
-    int id;
     String name;
-    String age;
-    double money;
-
-
+    int id;
+    int age;
 }
